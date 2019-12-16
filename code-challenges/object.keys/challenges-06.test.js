@@ -97,7 +97,7 @@ const hasChildrenValues = (arr, character) => {
 
 };
 
-/* ------------------------------------------------------------------------------------------------
+/* nich paro helped me with the logic on the next two functions -------------------------------------------------------------------------------------------
 CHALLENGE 4
 
 Write a function named hasChildrenEntries that is similar to your hasChildrenValues function from challenge 3, but uses the data's entries instead of its values.
