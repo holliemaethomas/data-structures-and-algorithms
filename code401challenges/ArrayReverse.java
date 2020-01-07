@@ -17,3 +17,4 @@ public static void main (String[] args) {
   reverse(arr, arr.length);
 }
 }
+// received help from geeks for geeks
