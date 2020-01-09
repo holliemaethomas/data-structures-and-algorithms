@@ -11,4 +11,15 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+@Test
+    public void TestArrayShift() {
+        int[] pseudoArray = new int[]{1,2,3,5,6,7};
+        int[] shiftedArray = new int[]{1,2,3,4,5,6,7};
+        assertArrayEquals(
+                "The Array returns with the new value",
+                shiftedArray,
+                ArrayShift.shiftArray(pseudoArray, 4)
+
+        );
+}
 }
