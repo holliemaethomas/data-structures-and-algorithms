@@ -9,3 +9,16 @@ My partner and I took the nested for-loop approach. I belive there is probably a
 
 ### Solution
 ![solution](./images/arrayReverse.jpg)
+
+
+
+
+## Shift an Array
+### Challenge
+write a method to add an elment into an array of integers
+
+### Approach & Efficiency
+My partner and I took the approach of dividing the array by its length and inserting the new element in the middle
+
+### Solution
+![solution](./images/401chal2.jpg)
