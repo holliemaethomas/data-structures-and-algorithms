@@ -22,4 +22,16 @@ public class LibraryTest {
 
         );
 }
+@Test
+    public void TestBinarySearch() {
+        int[] testArr = new int[]{1,2,3,5,6,7};
+        int testSearchNumber = 3;
+        assertEquals (
+                "The method should search the array for the search value and return the value, if the value " +
+                        "is not in the array the method should return -1",
+                3,
+                BinarySearch.binarySearch(testArr, 5));
+
+
+    }
 }
