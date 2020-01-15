@@ -62,18 +62,45 @@ public class LinkedList<T> {
             Node<T> newNode = new Node<>(newValue, current.getNext());
             current.setNext(newNode);
         }
+    }
 
+    public void insertAfter(T value, T newValue) {
+        if (this.head == null) {
+            return;
+        }
+        Node<T> current = this.head;
+      while (current != null) {
+          if (current.getValue().equals(value)){
+              break;
+          }
+          current = current.getNext();
+      }
+      if (current == null) {
+          return;
+      }
+        Node<T> newNode = new Node<>(newValue, current.getNext());
+      current.setNext(newNode);
+    }
+
+    public String kthFromEnd(int k) {
+        int listLength = 0;
+        Node<T> current = this.head;
+        while (current != null) {
+            listLength++;
+            current = current.getNext();
+        }
+        current = this.head;
+        for (int j = 1; j <= listLength; j++) {
+            if (j == listLength - k) {
+                return current.getValue().toString();
+            }
+            current = current.getNext();
+        }
+        throw new IndexOutOfBoundsException();
+    }
 
     }
 
 
-
-
-
-
-
-
-
-}
 
 //got help from my buddy Nich.
