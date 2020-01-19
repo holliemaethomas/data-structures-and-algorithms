@@ -1,4 +1,5 @@
 package code401challenges.linkedList;
+import java.util.LinkedList;
 
 public class Node<T> {
     private T value;

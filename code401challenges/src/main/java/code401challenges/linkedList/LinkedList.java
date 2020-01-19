@@ -1,6 +1,10 @@
 package code401challenges.linkedList;
 
 
+
+
+
+
 public class LinkedList<T> {
     private Node<T> head;
 
@@ -99,7 +103,50 @@ public class LinkedList<T> {
         throw new IndexOutOfBoundsException();
     }
 
+    @Override
+    public String toString() {
+        return setToString(this.head);
     }
+
+    private String setToString(Node<T> node) {
+        if (node == null) {
+            return "null";
+        }
+        return node.getValue() + " " + setToString(node.getNext());
+    }
+
+    public static <F> LinkedList<F> mergeList(LinkedList<F> firstList, LinkedList<F> secondList) {
+        if (firstList.getHead() == null) {
+            return secondList;
+        } else if (secondList.getHead() == null) {
+            return firstList;
+        } else {
+            Node<F> currentFirst = firstList.getHead();
+            Node<F> currentSecond = secondList.getHead();
+            while (currentFirst != null && currentSecond != null) {
+                if (currentSecond.getValue() == null) {
+                    break;
+                } else if (currentFirst.getNext() == null && currentSecond.getValue() != null) {
+                    currentFirst.setNext(currentSecond);
+                    break;
+                } else {
+                    Node<F> tempFirst = currentFirst.getNext();
+                    Node<F> tempSecond = currentSecond.getNext();
+                    currentFirst.setNext(currentSecond);
+                    currentFirst.getNext().setNext(tempFirst);
+                    currentFirst = currentFirst.getNext().getNext();
+                    currentSecond = tempSecond;
+                }
+            }
+            return firstList;
+        }
+    }
+
+}
+
+//    was able to get my merge method back, went ahead and copied it back in.
+
+
 
 
 
