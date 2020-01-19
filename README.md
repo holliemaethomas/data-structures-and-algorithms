@@ -32,3 +32,13 @@ My partner and I took the approach of dividing the array by its length and repea
 
 ### Solution
 ![solution](./images/401chal2.jpg)
+
+## Insert Node at Kth
+### Challenge
+write a method to insert a node in the "kth" position from the end of a linked list
+
+### Approach & Efficiency
+I took the approach of determining the length of the node, using a counter, and inserting the new node at the end minus the given number. 
+
+### Solution
+![solution](./images/chal07.jpg)
