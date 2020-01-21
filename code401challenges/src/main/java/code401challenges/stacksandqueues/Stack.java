@@ -31,8 +31,31 @@ public class Stack<T> {
         }
     }
 
-    public T peek() {
+    public Boolean isEmpty() {
+        return top == null;
+    }
 
+    public T peek() {
+        if (this.isEmpty()) {
+            throw new NoSuchElementException();
+        } else {
+            return top.value;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "top -> " + setToString(this.top) ;
+    }
+
+    private String setToString(Node<T> node) {
+        if (node == null) {
+            return "null";
+        } else {
+            return node.value + " -> " + setToString(node.next);
+        }
     }
 
 }
+
+
