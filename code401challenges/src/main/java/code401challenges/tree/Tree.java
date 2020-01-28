@@ -98,5 +98,18 @@ public List<T> traversePostOrder() {
                 : treeContains(current.right, value);
     }
 
+
+//    public Tree fizzbuzz(Tree tree) {
+//        fizzbuzzRecursively(tree.root);
+//        return tree;
+//
+//    }
+//    private void fizzbuzzRecursively(Node me){
+//        String val = me.value;
+//        int intyVal = Integer.parseInt(val);
+//        if (intyVal % 15 == 0)
+//
+//    }
+
 }
 //modeled my methods from this source https://www.baeldung.com/java-binary-tree
