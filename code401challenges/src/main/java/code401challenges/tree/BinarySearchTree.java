@@ -64,7 +64,6 @@ public class BinarySearchTree <T extends Comparable<T>> extends Tree<T>
 
 //this lab is a frankstein of what I learned from the article I
 // sited in Tree.java and some help from Nich. I copy pasted a large
-// chunk from Tree.java
-//I dont really understand "?" but I saw it in several examples. would like
-// to ask you about it
+// chunk from Tree.java then refactored
+
 
