@@ -75,7 +75,7 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 * Approach: Write the most efficent method for a stack que
 
 ### Solution
-![solution](./images/animalshelter.jpg)
+![solution](./images/animalShelter.jpg)
 
 #Code Challenge 15
 ## Tree and Binary Search Tree
