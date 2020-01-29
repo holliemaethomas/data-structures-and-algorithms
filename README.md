@@ -57,6 +57,9 @@ The Stack instances have only push, pop, and peek methods. You should use your o
 ### Approach and Efficiency
 * Approach: Write the most efficent method for eneque and dequeue
 
+### Solution
+![solution](./images/EnqueueDequue.jpg)
+
 #Code Challenge 15
 ## Tree and Binary Search Tree
 
