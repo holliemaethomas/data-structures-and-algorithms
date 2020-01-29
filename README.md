@@ -43,6 +43,20 @@ I took the approach of determining the length of the node, using a counter, and 
 ### Solution
 ![solution](./images/chal07.jpg)
 
+#Code Challenge 11
+## Enqueue and Dequeue
+
+### Challenge
+Create two methods :Enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+Dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+The Stack instances have only push, pop, and peek methods. You should use your own Stack implementation. Instantiate these Stack objects in your PseudoQueue constructor
+
+### Resources
+* [Java Queue](https://www.geeksforgeeks.org/queue-interface-java/)
+
+### Approach and Efficiency
+* Approach: Write the most efficent method for eneque and dequeue
+
 #Code Challenge 15
 ## Tree and Binary Search Tree
 
