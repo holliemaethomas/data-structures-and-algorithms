@@ -69,8 +69,6 @@ Implement the following methods:
 enqueue(animal): adds animal to the shelter. animal can be either a dog or a cat object.
 dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then return null.
 
-
-
 ### Approach and Efficiency
 * Approach: Write the most efficent method for a stack que
 
@@ -90,7 +88,17 @@ Create a class `BinarySearchTree` which has `add(int value)` and `contains(int v
 * [Comparing Generic Types](https://stackoverflow.com/questions/20793082/java-comparing-generic-types)
 
 
+
+#Code Challenge 17
+## Breadth First
+
+### Challenge
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
 ### Approach and Efficiency
-* Approach: Create a test driven Class which follows best practices and has optimized time and space.
+* Approach: Write the most efficent method for a breadth first traversal
+
+### Solution
+![solution](./images/breadthFirst.jpg)
 
     
