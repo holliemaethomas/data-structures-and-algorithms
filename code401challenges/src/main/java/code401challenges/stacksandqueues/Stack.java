@@ -3,7 +3,7 @@ package code401challenges.stacksandqueues;
 import java.util.NoSuchElementException;
 
 public class Stack<T> {
-    private Node <T> top;
+    public Node <T> top;
         private int length = 0;
 
     public Node<T> getTop() {
