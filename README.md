@@ -89,6 +89,19 @@ Create a class `BinarySearchTree` which has `add(int value)` and `contains(int v
 
 
 
+#Code Challenge 16
+## Fizz Buzz 
+
+### Challenge
+Write a recursive traversal of a tree that returns Fizz if the value is divisible by 3, Buzz if divisibile by 5, and FizzBuss if divisible by 15
+
+### Approach and Efficiency
+* Approach: Write the most efficent method for a breadth first traversal
+
+### Solution
+![solution](./images/chall16.jpg)
+
+
 #Code Challenge 17
 ## Breadth First
 
