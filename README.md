@@ -124,6 +124,6 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 * Approach: Write the most efficent method for a breadth first traversal
 
 ### Solution
-![solution](./images/chall18.jpg)
+![solution](./images/chal18.jpg)
 
     
