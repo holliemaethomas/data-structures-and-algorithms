@@ -155,6 +155,26 @@ public class Tree<T> {
 
     }
 
+    private boolean isTypeInteger(T nodeVal) {
+        return nodeVal instanceof Integer;
+    }
+
+    public int findMaxValue() {
+        if (this.isEmpty()){
+            throw new NoSuchElementException();
+        } else if (!TypeInteger(this.getRoot().getValue())) {
+            throw new IllegalStateException("the tree can only contain numerical values");
+        }
+        List<T> traversedTree = this.traverseInOrder();
+        int maxVal = (int) traversedTree.get(0);
+        for (int i = 1; i < traversedTree.size(); i++){
+            if (maxVal < (int) traversedTree.get(i)) {
+                maxVal = (int) traversedTree.get(i);
+            }
+        }
+        return maxVal;
+    }
+
 }
 //modeled my methods from this source https://www.baeldung.com/java-binary-tree
 //Nich Paro helped with breadth first
