@@ -75,6 +75,22 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 ### Solution
 ![solution](./images/animalShelter.jpg)
 
+#Code Challenge 13
+## Bracket Validation
+
+### Challenge
+Your function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+### Approach and Efficiency
+* use hashsets and a hashmap for opening and closing brackets. Traverse the string and if char is opening, move it the top of the stack, if char is closing look for the opening;
+
+### Solution
+![solution](./images/animalShelter.jpg)
+
 #Code Challenge 15
 ## Tree and Binary Search Tree
 
