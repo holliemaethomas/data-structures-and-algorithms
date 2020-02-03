@@ -158,7 +158,7 @@ public class Tree<T> {
     private boolean isTypeInteger(T nodeVal) {
         return nodeVal instanceof Integer;
     }
-
+//this code challenge demonstratees my abilities to work with the data structure trees, I would like to submit this work as points towards code challenge 13
     public int findMaxValue() {
         if (this.isEmpty()){
             throw new NoSuchElementException();
@@ -174,6 +174,8 @@ public class Tree<T> {
         }
         return maxVal;
     }
+
+//
 
 }
 //modeled my methods from this source https://www.baeldung.com/java-binary-tree
