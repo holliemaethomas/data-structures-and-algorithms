@@ -48,9 +48,14 @@ The method will run one more time and all conditions will be met and will force 
 Below is a diagram to help with visuals
 
 
-![solution](./images/blogChallenge26.jpg)
 
-## Merge Sort walk through
+
+![solution](./images/blogChallenge26.JPG)
+
+
+
+
+# Merge Sort walk through
 
 #### Hollie Thomas
 ### Challenge
