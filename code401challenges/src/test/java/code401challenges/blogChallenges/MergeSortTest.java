@@ -1,5 +1,7 @@
 package code401challenges.blogChallenges;
 
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class MergeSortTest {
@@ -13,3 +15,4 @@ public class MergeSortTest {
     }
 
 }
+//use this as a resource https://www.baeldung.com/java-merge-sort
