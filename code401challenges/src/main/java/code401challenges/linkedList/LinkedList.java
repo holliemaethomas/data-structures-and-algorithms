@@ -6,7 +6,7 @@ package code401challenges.linkedList;
 
 
 public class LinkedList<T> {
-    private Node<T> head;
+    private Node<T, V> head;
 
     public LinkedList() {
         this.head = null;
@@ -20,17 +20,17 @@ public class LinkedList<T> {
         this.head = new Node<>(value, null);
     }
 
-    public Node<T> getHead() {
+    public Node<T, V> getHead() {
         return this.head;
     }
 
     public void prepend(T value) {
-        Node<T> temp = this.head;
+        Node<T, V> temp = this.head;
         this.head = new Node<>(value, temp);
     }
 
     public boolean includes (T valueToCheck) {
-        Node<T> current = this.head;
+        Node<T, V> current = this.head;
         while (current != null) {
             if (current.getValue().equals(valueToCheck)) {
                 return true;
@@ -41,11 +41,11 @@ public class LinkedList<T> {
     }
 
     public void append(T value) {
-        Node<T> current = this.head;
+        Node<T, V> current = this.head;
         while (current.getNext() != null){
             current = current.getNext();
         }
-        Node<T> newNode = new Node<>(value, null);
+        Node<T, V> newNode = new Node<>(value, null);
         current.setNext(newNode);
     }
 
@@ -54,7 +54,7 @@ public class LinkedList<T> {
         if (this.head == null) {
             return;
         }
-        Node<T> current = this.head;
+        Node<T, V> current = this.head;
         if (current.getValue().equals(value)) {
             prepend(newValue);
             return;
@@ -63,7 +63,7 @@ public class LinkedList<T> {
             if (current.getNext() == null) {
                 return;
             }
-            Node<T> newNode = new Node<>(newValue, current.getNext());
+            Node<T, V> newNode = new Node<>(newValue, current.getNext());
             current.setNext(newNode);
         }
     }
@@ -72,7 +72,7 @@ public class LinkedList<T> {
         if (this.head == null) {
             return;
         }
-        Node<T> current = this.head;
+        Node<T, V> current = this.head;
       while (current != null) {
           if (current.getValue().equals(value)){
               break;
@@ -82,13 +82,13 @@ public class LinkedList<T> {
       if (current == null) {
           return;
       }
-        Node<T> newNode = new Node<>(newValue, current.getNext());
+        Node<T, V> newNode = new Node<>(newValue, current.getNext());
       current.setNext(newNode);
     }
 
     public String kthFromEnd(int k) {
         int listLength = 0;
-        Node<T> current = this.head;
+        Node<T, V> current = this.head;
         while (current != null) {
             listLength++;
             current = current.getNext();
@@ -108,7 +108,7 @@ public class LinkedList<T> {
         return setToString(this.head);
     }
 
-    private String setToString(Node<T> node) {
+    private String setToString(Node<T, V> node) {
         if (node == null) {
             return "null";
         }
@@ -121,8 +121,8 @@ public class LinkedList<T> {
         } else if (secondList.getHead() == null) {
             return firstList;
         } else {
-            Node<F> currentFirst = firstList.getHead();
-            Node<F> currentSecond = secondList.getHead();
+            Node<F, V> currentFirst = firstList.getHead();
+            Node<F, V> currentSecond = secondList.getHead();
             while (currentFirst != null && currentSecond != null) {
                 if (currentSecond.getValue() == null) {
                     break;
@@ -130,8 +130,8 @@ public class LinkedList<T> {
                     currentFirst.setNext(currentSecond);
                     break;
                 } else {
-                    Node<F> tempFirst = currentFirst.getNext();
-                    Node<F> tempSecond = currentSecond.getNext();
+                    Node<F, V> tempFirst = currentFirst.getNext();
+                    Node<F, V> tempSecond = currentSecond.getNext();
                     currentFirst.setNext(currentSecond);
                     currentFirst.getNext().setNext(tempFirst);
                     currentFirst = currentFirst.getNext().getNext();

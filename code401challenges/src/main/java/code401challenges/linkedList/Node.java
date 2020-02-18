@@ -1,17 +1,16 @@
 package code401challenges.linkedList;
-import java.util.LinkedList;
 
-public class Node<T> {
+public class Node<T, V> {
     private T value;
-    private Node<T> next;
-    private Node<T> previous;
+    private Node<T, V> next;
+    private Node<T, V> previous;
 
-    Node (T value, Node<T> next) {
+    Node (T value, Node<T, V> next) {
         this.value = value;
         this.next = next;
     }
 
-    Node(T value, Node<T> next, Node<T> previous) {
+    Node(T value, Node<T, V> next, Node<T, V> previous) {
         this.value = value;
         this.next = next;
         this.previous = previous;
@@ -21,19 +20,19 @@ public class Node<T> {
         return this.value;
     }
 
-  void setNext(Node<T> node) {
+  void setNext(Node<T, V> node) {
         this.next = node;
   }
 
-  public Node<T> getNext() {
+  public Node<T, V> getNext() {
         return this.next;
   }
 
-  void setPrevious(Node<T> node) {
+  void setPrevious(Node<T, V> node) {
         this.previous = node;
   }
 
-  public Node<T> getPrevious() {
+  public Node<T, V> getPrevious() {
         return this.previous;
   }
 
