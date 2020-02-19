@@ -142,4 +142,24 @@ Write an instance method called find-maximum-value. Without utilizing any of the
 ### Solution
 ![solution](./images/chal18.jpg)
 
+
+# Hashtables
+
+## Challenge
+add: takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
+get: takes in the key and returns the value from the table.
+contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
+hash: takes in an arbitrary key and returns an index in the collection.
+
+## Approach & Efficiency
+Hashtables are an O(1) approach
+
+## API
+
+- [x] Get
+- [x] Add
+- [x] Hash
+- [x] Contains
+
+
     
