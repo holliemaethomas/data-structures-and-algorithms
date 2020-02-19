@@ -2,7 +2,7 @@ package code401challenges.tree;
 
 import java.util.NoSuchElementException;
 
-public class BinarySearchTree <T extends Comparable<T>> extends Tree<T>
+//public class BinarySearchTree <T extends Comparable<T>> extends Tree<T>
 //This is an example of sub class inheritance.
 // extends keyword is used to inherit a class;
 // while implements keyword is used to inherit
@@ -19,48 +19,48 @@ public class BinarySearchTree <T extends Comparable<T>> extends Tree<T>
 //Sarah, Jan 17 at 12:32pm
 
 
-{
-    public BinarySearchTree() {
-        super();
-    }
-
-    public void add(T value) {
-        this.root = add(this.root,
-                value);
-    }
-
-    private Node<T> add(Node<T> current, T value) {
-        if (current == null) {
-            return new Node<>(value);
-        } if (value.compareTo(current.getValue()) < 0) {
-            current.setLeft(add(current.getLeft(),
-                    value));
-        } else if (value.compareTo(current.getValue()) > 0) {
-            current.setRight(add(current.getRight(),
-                    value));
-        }
-        return current;
-    }
-
-
-    public boolean contains(T value) {
-        if (isEmpty()) {
-            throw new NoSuchElementException();
-        }
-        return contains(this.root, value);
-        }
-    private boolean contains(Node<T> current, T value) {
-        if (current == null) {
-            return false;
-        }
-        if (value.compareTo(current.getValue()) == 0) {
-            return true;
-        }
-        return value.compareTo(current.getValue()) < 0 ?
-                contains(current.getLeft(), value) :
-                contains(current.getRight(), value);
-    }
-}
+//{
+//    public BinarySearchTree() {
+//        super();
+//    }
+//
+//    public void add(T value) {
+//        this.root = add(this.root,
+//                value);
+//    }
+//
+//    private Node<T> add(Node<T> current, T value) {
+//        if (current == null) {
+//            return new Node<>(value);
+//        } if (value.compareTo(current.getValue()) < 0) {
+//            current.setLeft(add(current.getLeft(),
+//                    value));
+//        } else if (value.compareTo(current.getValue()) > 0) {
+//            current.setRight(add(current.getRight(),
+//                    value));
+//        }
+//        return current;
+//    }
+//
+//
+//    public boolean contains(T value) {
+//        if (isEmpty()) {
+//            throw new NoSuchElementException();
+//        }
+//        return contains(this.root, value);
+//        }
+//    private boolean contains(Node<T> current, T value) {
+//        if (current == null) {
+//            return false;
+//        }
+//        if (value.compareTo(current.getValue()) == 0) {
+//            return true;
+//        }
+//        return value.compareTo(current.getValue()) < 0 ?
+//                contains(current.getLeft(), value) :
+//                contains(current.getRight(), value);
+//    }
+//}
 
 //this lab is a frankstein of what I learned from the article I
 // sited in Tree.java and some help from Nich. I copy pasted a large

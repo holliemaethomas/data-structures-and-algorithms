@@ -35,9 +35,7 @@ public class HashTable<K, V> {
             } else {
                 map[hashVal].setValue(value);
             }
-            else{
-                throw new NoSuchElementException();
-            }
+
         }
     }
 
@@ -66,6 +64,17 @@ public class HashTable<K, V> {
                 }
             }
         }
+
+    @Override
+    public String toString() {
+        StringBuilder response = new StringBuilder();
+        for (Node<K,V> value : this.map) {
+            if (value != null) {
+                response.append(value).append("\n");
+            }
+        }
+        return response.toString();
+    }
 }
 
 
