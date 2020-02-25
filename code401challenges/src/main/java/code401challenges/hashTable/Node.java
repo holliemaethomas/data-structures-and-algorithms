@@ -1,4 +1,4 @@
-package code401challenges.HashTable;
+package code401challenges.hashTable;
 
 public class Node<K, V> {
 

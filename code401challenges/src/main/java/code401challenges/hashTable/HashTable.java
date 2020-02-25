@@ -1,18 +1,15 @@
-package code401challenges.HashTable;
+package code401challenges.hashTable;
 import java.util.*;
 
 
 
 
+public class HashTable<K,V> {
+    private Node<K,V>[] map;
 
-public class HashTable<K, V> {
-
-    private Node <K, V>[] map;
-
-    public void Hashtable(int size) {
+    public HashTable(int size) {
         this.map = new Node[size];
     }
-
 
     private int hash(K key) {
         int hashValue = 0;
@@ -20,10 +17,9 @@ public class HashTable<K, V> {
         for (char letter : letters) {
             hashValue += letter;
         }
-        hashValue = (hashValue * 5999 % map.length);
+        hashValue = (hashValue * 5999) % map.length;
         return hashValue;
     }
-
 
     public void add(K key, V value) {
         int hashVal = hash(key);
@@ -35,35 +31,35 @@ public class HashTable<K, V> {
             } else {
                 map[hashVal].setValue(value);
             }
-
+        } else {
+            map[hashVal] = new Node<>(key, value);
         }
     }
 
-        public V get(K key) {
+    public V get(K key) {
+        int hashKey = hash(key);
 
-            int hashKey = hash(key);
+        if (this.map[hashKey] != null) {
+            return map[hashKey].getValue();
+        } else {
+            throw new NoSuchElementException();
+        }
+    }
 
-            if (this.map[hashKey] != null) {
-                return map[hashKey].getValue();
-            } else {
-                throw new NoSuchElementException();
+    public boolean has(K key) {
+        return map[hash(key)] != null;
+    }
+
+    private void hashMapDouble(Node<K,V>[] map) {
+        this.map = new Node[map.length * 2];
+        for (Node<K,V> node : map) {
+            if (node != null) {
+                add(node.getKey(), node.getValue());
             }
         }
+    }
 
-
-        public boolean has(K key) {
-            return map[hash(key)] != null;
-        }
-
-
-        private void hashMapDouble(Node<K,V>[] map) {
-            this.map = new Node[map.length * 2];
-            for (Node<K,V> node : map) {
-                if (node != null) {
-                    add(node.getKey(), node.getValue());
-                }
-            }
-        }
+    public Node<K,V>[] getMap() { return this.map; }
 
     @Override
     public String toString() {
@@ -76,6 +72,7 @@ public class HashTable<K, V> {
         return response.toString();
     }
 }
+
 
 
 
