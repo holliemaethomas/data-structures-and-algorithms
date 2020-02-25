@@ -170,6 +170,9 @@ Without utilizing any of the built-in library methods available to your language
 ## Approach & Efficiency
 The Time complexity will be O(n)
 
+### Solution
+![solution](./images/challenge32.jpg)
+
 
 # Graphs
 
