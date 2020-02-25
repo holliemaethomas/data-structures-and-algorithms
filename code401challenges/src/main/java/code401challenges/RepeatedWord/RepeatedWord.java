@@ -30,4 +30,4 @@ public class RepeatedWord {
  }
 }
 
-//
+//Used this as a resource https://www.javatpoint.com/program-to-find-the-duplicate-words-in-a-string
