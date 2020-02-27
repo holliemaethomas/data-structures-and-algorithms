@@ -174,6 +174,14 @@ The Time complexity will be O(n)
 ![solution](./images/challenge32.jpg)
 
 
+## Challenge 33
+
+**Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.**
+
+## Approach & Efficiency
+The Time complexity will be O(N)
+
+
 # Graphs
 
 ## Challenge
@@ -202,4 +210,11 @@ Returns the total number of nodes in the graph
 ## Approach & Efficiency
 The Time complexity will be O(V + E), where V is the number of vertices, and E is the number of Edges.
 
-    
+# Tree intersection
+
+## Challenge 33
+
+**Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.**
+
+## Approach & Efficiency
+The Time complexity will be O(N)
