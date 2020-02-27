@@ -6,8 +6,9 @@ public class Node<T> {
     public T value;
     public Node<T> left;
     public Node<T> right;
+    public int key;
 
-//    constructors
+    //    constructors
     public Node(T value) {
         this.value = value;
         this.left = null;
@@ -19,6 +20,11 @@ public class Node<T> {
         this.value = value;
         this.left = left;
         this.right = right;
+    }
+
+    public Node() {
+        int key;
+        Node left, right;
     }
 //setters
 
