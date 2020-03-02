@@ -212,9 +212,12 @@ The Time complexity will be O(V + E), where V is the number of vertices, and E i
 
 # Tree intersection
 
-## Challenge 33
+## Challenge 36
 
-**Without utilizing any of the built-in library methods available to your language, return a set of values found in both trees.**
+**Extend your graph object with a breadth-first traversal method that accepts a starting node. Without utilizing any of the built-in methods available to your language, return a collection of nodes in the order they were visited. Display the collection.**
 
 ## Approach & Efficiency
 The Time complexity will be O(N)
+
+### Solution
+![solution](./images/challenge36.jpg)
