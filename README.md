@@ -235,3 +235,6 @@ The Time complexity will be O(N)
 
 ## Approach & Efficiency
 The Time complexity will be O(N)
+
+### Solution
+![solution](./images/chall86.jpg)
