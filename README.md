@@ -237,4 +237,4 @@ The Time complexity will be O(N)
 The Time complexity will be O(N)
 
 ### Solution
-![solution](./images/chall86.jpg)
+![solution](./images/chal38.jpg)
